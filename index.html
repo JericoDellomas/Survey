@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+    <title>freeCodeCamp Survey Form</title>
+  </header>
+  <body>
+    <img class="logo" src="img/Stussy_Logo.svg.png">
+<h1 id="title">Stussy Survey</h1>
+
+<p id="description" class="description">Thank you for taking the time to help us improve the platform<p>
+  <form id="survey-form">
+    
+<fieldset>
+<label id="name-label"><b>Name:</b> <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+<label id="email-label"><b>Email:</b> <input id="email" name="email" type="email" required placeholder="Enter your email"/></label>
+<label id="number-label"><b>Age:</b> <small>(Optional)</small><input id="number" name="number" type="number" min="0" max="99" required placeholder="Select"/></label>
+<br>
+<label class="fav">What is your favorite Stussy Product?
+<select id="dropdown">
+  <option value="">Select an option</option>
+  <option value="1">Jacket</option>
+  <option value="2">Shoes</option>
+  <option value="3">T-shirt</option>
+  <option value="4">Short</option>
+  <option value="5">Bag</option>
+  <option value="6">Underwear</option>
+</select>
+</label>
+</fieldset>
+</label><br>
+      </fieldset>
+      <fieldset>
+        <label class="would"> Would you recommend Stussy to a friend?</label><br>
+          <label><input type="radio" class="inline" name="attribute" value="1" checked /> Definitely</label>
+          <label><input type="radio" class="inline" name="attribute" value="2" /> Maybe</label>
+          <label><input type="radio" class="inline" name="attribute" value="3" /> Not sure</label>
+      </fieldset>
+      <fieldset>
+        <label class="what">What countrys would you like to visit in order to purchase Stussy products? <br> <small>(Check all that apply)</small> </label><br>
+        <label><input type="checkbox" class="inline" value="stussy-sydney" />Stussy Sydney</label>
+        <label><input type="checkbox" class="inline" value="stussy-toronto" />Stussy Toronto</label>
+        <label><input type="checkbox" class="inline" value="stussy-vancouver" />Stussy Vancouver </label>
+        <label><input type="checkbox" class="inline" value="stussy-new-york" />Stussy New York </label>
+        <label><input type="checkbox" class="inline" value="stussy-archive" />Stussy Archive</label>
+        <label><input type="checkbox" class="inline" value="stussy-los-angeles" />Stussy Los Angeles</label>
+        <label><input type="checkbox" class="inline" value="dsm-la" />Dsm La</label>
+        <label><input type="checkbox" class="inline" value="stussy-shibuya" />Stussy Shibuya</label>
+        <label><input type="checkbox" class="inline" value="stussy-kyoto" />Stussy Kyoto </label>
+        <label><input type="checkbox" class="inline" value="stussy-amsterdam" />Stussy Amsterdam</label>
+        <label><input type="checkbox" class="inline" value="stussy-guam" />Stussy Guam</label>
+      </fieldset>
+      <fieldset>
+
+<label class="any">Any Suggestions?
+<textarea rows="5" cols="50" placeholder="Enter your suggestions here..."></textarea>
+</label>
+
+</fielset>
+<fieldset>
+        <input type="submit" value="Submit" id="submit" />
+        <input type="button" value="Cancel" id="cancel" />
+      </fieldset>
+      
+  </form>
+  </body>
+  </html>
